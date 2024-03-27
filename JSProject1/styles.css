@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  background: url(./Brody-Whiplash.jpg) no-repeat;
+  background-size: cover;
+}
+
+.keys {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.key {
+  border: 0.25rem solid black;
+  border-radius: 0.5rem;
+  padding: 1rem 0.5rem;
+  color: aliceblue;
+  font-size: 1.5rem;
+  width: 8rem;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  background: rgba(0, 0, 0, 0.7);
+  text-shadow: 0 0 0.5rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: yellow;
+  box-shadow: 0 0 1rem yellow;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.5rem;
+  color: yellow;
+  text-transform: uppercase;
+}
