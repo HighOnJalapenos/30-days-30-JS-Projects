@@ -6,5 +6,4 @@ function handleUpdate(e) {
   document.documentElement.style.setProperty(`--${name}`, value + suffix);
 }
 
-inputs.forEach((input) => input.addEventListener("change", handleUpdate));
 inputs.forEach((input) => input.addEventListener("input", handleUpdate));
